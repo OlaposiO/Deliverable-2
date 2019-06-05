@@ -1,0 +1,7 @@
+C:\Users\Lyrical Hero\source\repos\LabVacation\LabVacation\bin\Debug\LabVacation.exe.config
+C:\Users\Lyrical Hero\source\repos\LabVacation\LabVacation\bin\Debug\LabVacation.exe
+C:\Users\Lyrical Hero\source\repos\LabVacation\LabVacation\bin\Debug\LabVacation.pdb
+C:\Users\Lyrical Hero\source\repos\LabVacation\LabVacation\obj\Debug\LabVacation.csproj.CoreCompileInputs.cache
+C:\Users\Lyrical Hero\source\repos\LabVacation\LabVacation\obj\Debug\LabVacation.exe
+C:\Users\Lyrical Hero\source\repos\LabVacation\LabVacation\obj\Debug\LabVacation.pdb
+C:\Users\Lyrical Hero\source\repos\LabVacation\LabVacation\obj\Debug\LabVacation.csprojAssemblyReference.cache

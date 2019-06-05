@@ -1,0 +1,118 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LabVacation
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string activity, location, party, travel;
+            int a =party;
+            a = Convert.ToInt32(party);
+
+
+            Console.WriteLine("Hey there! Welcome to Ollie world! I'm Ollie and Im here to help you out! What type of adventure are you looking for today? ");
+            
+            start:
+            Console.WriteLine("Chilling, Food, Arcade, or Danger(my favorite)?");
+            activity = Console.ReadLine();
+
+            switch (activity)
+            
+                {
+                
+                case "Chilling" /*|| "chilling" || "CHILLING"*/:
+                    Console.WriteLine("Sounds relaxing! Would you like to the Spa, Beach, or Bar?");
+                    location = Console.ReadLine();
+                    goto chilling1;
+
+                case "Food" /*|| "food" || "FOOD"*/:
+                    Console.WriteLine("Food is always a great choice! There is American, Mexican, & Italian around. What do you have a taste for?");
+                    location = Console.ReadLine();
+                    goto food1;
+
+                case "Arcade" /*|| "arcade" || "ARCADE"*/:
+                    Console.WriteLine("Great choice we have 2 arcades in Ollie World. Which would you like to go to? We have RetroLand or FuturePalace!");
+                    location = Console.ReadLine();
+                    break;
+
+                case "Danger" /*|| "DANGER" || "danger"*/:
+                    Console.WriteLine("I knew you were awesome! Check out our newest attarction, Danger Island!");
+                    break;
+
+                default:
+                    Console.WriteLine("Sorry, I did get that. What would you like to do?");
+                    goto start;
+                    }
+
+
+            chilling1:
+
+            switch (location)
+
+                {
+
+                case "Spa" /* - spa - SPA*/:
+                    Console.WriteLine("I could use a massage to! How many people are you going to the spa with?");
+                    party = Console.ReadLine();
+                    a = Convert.ToInt32(party);
+                    goto travel1;
+
+                    case "Beach" /*- beach - BEACH*/:
+                    Console.WriteLine("Its a beauty day to have sand in you toes! How many people are going to the beach?");
+                    party = Console.ReadLine();
+                    a = Convert.ToInt32(party);
+                    goto travel1;
+
+                    case "Bar" /*- BAR - bar*/:
+                    Console.WriteLine("I will take a virtual drink with you! How many people are hitting the bar?");
+                    party = Console.ReadLine();
+                    a = Convert.ToInt32(party);
+                    goto travel1; //dont fotget to make this label at the end
+
+
+                    default:
+                    Console.WriteLine("Sorry, I didn't get that. Was that Spa, Beach, or Bar?");
+                    Console.ReadLine();
+                    goto chilling1;
+            }
+
+            food1:
+
+            switch (location)
+                {
+                
+                case "American" /*- AMERICAN - american*/:
+                    Console.WriteLine("A cheese buger sounds great. How many people are going?");
+                    party = Console.ReadLine();
+                    a = Convert.ToInt32(party);
+                    goto travel1;
+
+                    case "Mexican" /*- mexican - MEXICAN*/:
+                    Console.WriteLine("Tacos are my second favorite food! ^__^ What is the size of your party?");
+                    party = Console.ReadLine();
+                    a = Convert.ToInt32(party);
+                    goto travel1;
+
+                    case "Italian" /* - italian - ITALIAN*/:
+                    Console.WriteLine("Did you know pizza is a vegetable! Eat as much as you like guilt free.What is your party size?");
+                    party = Console.ReadLine();
+                    a = Convert.ToInt32(party);
+                    goto travel1;
+
+                    default:
+                    Console.WriteLine("Sorry, I didn't get that. Was that American, Mexican, or Italian?");
+                    Console.ReadLine();
+                    goto food1;
+                    }
+
+            }
+
+        }
+    }
+
+
